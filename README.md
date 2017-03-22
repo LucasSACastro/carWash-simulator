@@ -4,4 +4,4 @@
 [EN:] Car-washer simultation made at Professor Doctor Alexander Charles Brandon Ramos from Mathematics and Computering Institute (IMC) of the Federal University of Itajybah, MG, Brazil (UNIFEI).
 
 
-WARNING: If you don't know what this project is about, it won't probably be interesting to you.
+WARNING: If you don't already know whatever this project is about, it won't probably be interesting to you.
