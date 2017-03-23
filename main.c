@@ -58,12 +58,12 @@ void sim(unsigned int numero_clientes, FILE *fout) {
 		unsigned instance, sum;
 	} ocio_operador;
 	struct {
-        	float tempo_fila, prob_fila, prob_opLivre, tempo_serv, tempo_syst;
+    float tempo_fila, prob_fila, prob_opLivre, tempo_serv, tempo_syst;
 	} stat;
 
-    	/* Inicialização das variáveis da simulação: */
-    	chegada.relogio=servico.fim=servico.sum_duracao=tempo_cliente.sum_fila =
-    	tempo_cliente.sum_totais=ocio_operador.sum=tempo_cliente.queue_count = 0;
+  /* Inicialização das variáveis da simulação: */
+  chegada.relogio=servico.fim=servico.sum_duracao=tempo_cliente.sum_fila =
+  tempo_cliente.sum_totais=ocio_operador.sum=tempo_cliente.queue_count = 0;
 
 	for(cliente=1; cliente<=numero_clientes; cliente++) {
 		/* Cálculo das estatísticas para este cliente: */
@@ -87,14 +87,16 @@ void sim(unsigned int numero_clientes, FILE *fout) {
 		ocio_operador.sum        += ocio_operador.instance;
 
 		/* INSIRA AQUI A IMPRESSÃO AO ARQUIVO... */
-    }
+  }
 
-    /* Equações finais: */
-    stat.tempo_fila   = tempo_cliente.sum_fila/numero_clientes;
-    stat.prob_fila    = tempo_cliente.queue_count/numero_clientes;
-    stat.prob_opLivre = ocio_operador.sum/servico.fim;  /* Dividindo-se polo fim do último servico, que foy o fim da simulação em si.*/
-    stat.tempo_serv   = servico.sum_duracao/numero_clientes;
-    stat.tempo_syst   = tempo_cliente.sum_totais/numero_clientes;
+  /* Equações finais: */
+  stat.tempo_fila   = tempo_cliente.sum_fila/numero_clientes;
+  stat.prob_fila    = tempo_cliente.queue_count/numero_clientes;
+  stat.prob_opLivre = ocio_operador.sum/servico.fim;  /* Dividindo-se polo fim do último servico, que foy o fim da simulação em si.*/
+  stat.tempo_serv   = servico.sum_duracao/numero_clientes;
+  stat.tempo_syst   = tempo_cliente.sum_totais/numero_clientes;
 
-    /* INSIRA IMPRESSÃO DAS EQUAÇÕES FINAIS! */
+  /* INSIRA IMPRESSÃO DAS EQUAÇÕES FINAIS! */
+  
+  return;
 }
