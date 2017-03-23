@@ -1,7 +1,15 @@
+/* 
+ * File:   main.c
+ * Author: Luke S. A. Castro / Victor Pius
+ *
+ * Created on 22 de Março de 2017, 14:01
+ */
+
 #include <stdio.h>
-#include <stdlib.h>
 
 #define OUTPUT_FILENAME "output.txt"
+
+
 
 void sim(unsigned int numero_clientes,FILE *fout){
 	int cliente;
@@ -14,6 +22,10 @@ void sim(unsigned int numero_clientes,FILE *fout){
 	
 }
 
+
+/*
+ * 
+ */
 int main(){
 	
 	unsigned int numero_clientes;
