@@ -61,9 +61,9 @@ void sim(unsigned int numero_clientes, FILE *fout) {
         	float tempo_fila, prob_fila, prob_opLivre, tempo_serv, tempo_syst;
 	} stat;
 
-    /* Inicialização das variáveis da simulação: */
-    chegada.relogio=servico.fim=servico.sum_duracao=tempo_cliente.sum_fila =
-    tempo_cliente.sum_totais=ocio_operador.sum=tempo_cliente.queue_count = 0;
+    	/* Inicialização das variáveis da simulação: */
+    	chegada.relogio=servico.fim=servico.sum_duracao=tempo_cliente.sum_fila =
+    	tempo_cliente.sum_totais=ocio_operador.sum=tempo_cliente.queue_count = 0;
 
 	for(cliente=1; cliente<=numero_clientes; cliente++) {
 		/* Cálculo das estatísticas para este cliente: */
