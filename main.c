@@ -20,7 +20,7 @@ void sim(unsigned numero_clientes, FILE *fout);
  **  Function main(); descobre o número de clientes, abre o arquivo e inicia a simulação. Fecha-o
  ** despois, para retornar 0.
  **/
-int main(){
+int main() {
 	unsigned int numero_clientes;
 	FILE *fout;
 
@@ -39,7 +39,7 @@ int main(){
 }
 
 
-void sim(unsigned int numero_clientes, FILE *fout){
+void sim(unsigned int numero_clientes, FILE *fout) {
 	register int cliente; /* Cliente sendo atendido no momento; começa como lixo. */
 
 	/*Variáveis da tabela:*/
